@@ -4,7 +4,8 @@
   "description": "Describe Madagascar city by only an zip code",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "client": "node client.js"
   },
   "author": "RFihobiana",
   "license": "ISC",
