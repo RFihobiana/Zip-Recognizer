@@ -30,15 +30,15 @@ async function zipcodeResponder(socket) {
             return
         }
         else {
-            const city = data[inputLine]
-            output(city ? city : `There is no ${inputLine} zipcode in Madagascar!`)
+            const city = data.filter(c => c.zip_code == inputLine)[0]
+            output(city ? JSON.stringify(city) : `There is no ${inputLine} zipcode in Madagascar!`)
         }
     }
 }
 
 server.on('connection', socket => {
     zipcodeResponder(socket)
-        .then(socket.end)
+        .then(() => socket.end())
         .catch(err => {
             console.error(err.message)
             socket.end()
