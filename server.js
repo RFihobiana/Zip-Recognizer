@@ -25,13 +25,20 @@ async function zipcodeResponder(socket) {
 
     output('Type zip code number you wish to know about...\n\r"bye" to leave')
     for await (let inputLine of inputReader) {
-        if (inputLine == 'bye') {
+        if (inputLine == '') {
+            output('')
+            continue
+        } else if (inputLine == 'bye') { // exit
             output('See you next time!', false)
             return
-        }
-        else {
+        } else {
             const city = data.filter(c => c.zip_code == inputLine)[0]
-            output(city ? JSON.stringify(city) : `There is no ${inputLine} zipcode in Madagascar!`)
+            if (!city) output(`There is no ${inputLine} zipcode in Madagascar!\n`)
+            else {
+                output(`You can found that at ${city.province}
+                \rRegion of ${city.region}
+                \r${city.district} district\n\r`)
+            }
         }
     }
 }
