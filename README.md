@@ -54,7 +54,7 @@ If that is not your case, here is what you need to do:
 **Congratulations!!!** You have it now!
 
 # Note
-Currently, this is for Madagascar only!
+Currently, this is for Madagascar only, and this do not use *GUI* for running. All things is in you console. *No need* to abuse your CPU 🤩
 
 # Contribution
 Wanna contribute to development?
