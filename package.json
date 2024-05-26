@@ -1,0 +1,11 @@
+{
+  "name": "zipcode-state-recognizer",
+  "version": "1.0.0",
+  "description": "Describe Madagascar city by only an zip code",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "RFihobiana",
+  "license": "ISC"
+}
