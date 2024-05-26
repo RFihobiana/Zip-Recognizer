@@ -17,13 +17,13 @@ Currently my tree, is so simple. Perhaps, it will change if I am not lazzy 😂
 
 That's it! Here we go...
 
-* [data/](.\data)
-  * [zipcode.json](.\data\zipcode.json)
-* [client.js](.\client.js)
-* [package.json](.\package.json)
-* [README.md](.\README.md)
-* [run.cmd](.\run.cmd)
-* [server.js](.\server.js)
+* [data/](./data)
+  * [zipcode.json](./data/zipcode.json)
+* [client.js](./client.js)
+* [package.json](./package.json)
+* [README.md](./README.md)
+* [run.cmd](./run.cmd)
+* [server.js](./server.js)
 
 # Installation and running
 
