@@ -7,5 +7,6 @@
     "start": "node server.js"
   },
   "author": "RFihobiana",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
